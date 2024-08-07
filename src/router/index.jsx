@@ -1,21 +1,15 @@
 
 import {
   createBrowserRouter,
-  Link,
+//   Link,
 } from "react-router-dom";
+import { Quanao } from "../quan-ao";
+
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
+    element: <Quanao/> 
   },
-  {
-    path: "about",
-    element: <div>About</div>,
-  },
+
 ]);
